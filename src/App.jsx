@@ -10,15 +10,16 @@ import Setting from "./Sections/Setting";
 import CreditCard from "./Sections/CreditCard";
 import Account from "./Sections/account";
 import Investment from "./Sections/investment";
+import AppLayout from "./layout/AppLayout";
 
 const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Appbar />,
+      element: <AppLayout />,
       children: [
         {
-          path: "dashboard",
+          path: "",
           element: <Dashboard />,
         },
         {
@@ -53,11 +54,15 @@ const App = () => {
           path: "setting",
           element: <Setting />,
         },
+        {
+          path: "*",
+          element: <h1>No such path exist</h1>,
+        },
       ],
     },
   ]);
 
-  return <RouterProvider router={router}>{children}</RouterProvider>;
+  return <RouterProvider router={router} />;
 };
 
 export default App;

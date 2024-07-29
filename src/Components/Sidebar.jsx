@@ -46,13 +46,13 @@ const Sidebar = () => {
         Services
       </NavLink>
       <NavLink
-        to="/my-privileges"
+        to="/my-priviliges"
         className={({ isActive }) => (isActive ? "active" : "")}
       >
         My Privileges
       </NavLink>
       <NavLink
-        to="/settings"
+        to="/setting"
         className={({ isActive }) => (isActive ? "active" : "")}
       >
         Settings
