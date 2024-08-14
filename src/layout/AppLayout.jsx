@@ -4,12 +4,15 @@ import Appbar from "../Components/Appbar";
 
 const AppLayout = () => {
   return (
-    <div>
+    <div className="flex flex-row">
       <Sidebar />
-      <div>
+
+      <div className="flex flex-col w-screen">
         <Appbar />
-        {<Outlet />}
+
+        <Outlet />
       </div>
+
     </div>
   );
 };

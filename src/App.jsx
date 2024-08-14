@@ -11,6 +11,8 @@ import CreditCard from "./Sections/CreditCard";
 import Account from "./Sections/account";
 import Investment from "./Sections/investment";
 import AppLayout from "./layout/AppLayout";
+import SidebarProvider from "./Context/sidebarContext";
+
 
 const App = () => {
   const router = createBrowserRouter([
@@ -62,7 +64,10 @@ const App = () => {
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+    <SidebarProvider>
+      <RouterProvider router={router} />
+    </SidebarProvider>)
 };
 
 export default App;
