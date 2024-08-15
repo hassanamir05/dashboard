@@ -1,6 +1,6 @@
 const ProfilePic = (props) => {
 
-    return <img src={props.src} className="h-[35px] ml-2 hover:cursor-pointer hidden md:flex lg:flex" alt="Profile Picture" />
+    return <img src={props.src} className="h-[35px] ml-2 hover:cursor-pointer " alt="Profile Picture" />
 }
 
 export default ProfilePic;

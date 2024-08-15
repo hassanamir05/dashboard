@@ -35,7 +35,7 @@ const Loan = () => {
   return <div className="bg-[#E5E5E5] min-h-screen overflow-y-auto overflow-x-hidden py-10 min-w-screen flex flex-wrap justify-center gap-4 px-5">
 
 
-    <div className="flex gap-2 flex-row justify-evenly w-full flex-wrap">
+    <div className="flex gap-2 flex-row justify-evenly w-full h-[140px] overflow-x-scroll hide-scrollbar">
       {
         smallCardsData.map((cardData, index) => {
           return <SmallCard title={cardData.title} iconSrc={cardData.iconSrc} value={cardData.amount} bgColor={cardData.bgColor} />

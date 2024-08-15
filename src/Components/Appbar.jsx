@@ -68,12 +68,14 @@ const Appbar = () => {
   return (
     <div className="h-[75px] w-full px-10 pt-3 flex justify-between items-center sticky top-0 bg-white z-10 shadow-md">
 
+      <button className="ml-4 md:hidden mr-2" onClick={() => setMobileSidebarVisible(!mobileSidebarVisible)}>
+        <i className="fa-solid fa-bars"> </i>
+      </button>
+
       <h1 style={{ fontFamily: 'Inter' }} className="text-2xl font-[500] text-headingColor">
-        <button className="ml-4 md:hidden mr-2" onClick={() => setMobileSidebarVisible(!mobileSidebarVisible)}>
-          <i className="fa-solid fa-bars"> </i>
-        </button>
         {title}
       </h1>
+
       <div className="flex items-center gap-3">
         <SearchBox />
         <div className="flex items-center gap-3">

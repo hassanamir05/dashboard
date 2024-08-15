@@ -58,9 +58,9 @@ const SidebarLinks = () => (
     <NavLink to="/services" style={{ fontFamily: 'Inter' }} className={({ isActive }) => (isActive ? "w-[210px] px-[35px] text-md h-[30px] pt-2 active my-3" : "w-[210px] px-[35px] text-md h-[30px] pt-2 non-active my-3 ")}>
       <span className="text-left w-[200px]"><i className="fa-solid fa-screwdriver-wrench text-md mr-2"></i>Services</span>
     </NavLink>
-    <NavLink to="/my-priviliges" style={{ fontFamily: 'Inter' }} className={({ isActive }) => (isActive ? "w-[210px] px-[35px] text-md h-[30px] pt-2 active my-3" : "w-[210px] px-[35px] text-md h-[30px] pt-2 non-active my-3 ")}>
+    {/* <NavLink to="/my-priviliges" style={{ fontFamily: 'Inter' }} className={({ isActive }) => (isActive ? "w-[210px] px-[35px] text-md h-[30px] pt-2 active my-3" : "w-[210px] px-[35px] text-md h-[30px] pt-2 non-active my-3 ")}>
       <span className="text-left w-[200px]"><i className="fa-solid fa-lightbulb-dollar text-md mr-2"></i>My Priviliges</span>
-    </NavLink>
+    </NavLink> */}
     <NavLink to="/setting" style={{ fontFamily: 'Inter' }} className={({ isActive }) => (isActive ? "w-[210px] px-[35px] text-md h-[30px] pt-2 active my-3" : "w-[210px] px-[35px] text-md h-[30px] pt-2 non-active my-3 ")}>
       <span className="text-left w-[200px]"><i className="fa-solid fa-gear text-md mr-2"></i>Settings</span>
     </NavLink>
