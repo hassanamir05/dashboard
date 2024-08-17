@@ -1,25 +1,25 @@
 const QuickTransferData = [
     {
-        source: '/src/assets/Images/dummy-image.png',
-        name: 'Muhammad',
+        source: 'https://cdn.britannica.com/99/236599-050-1199AD2C/Mark-Zuckerberg-2019.jpg?w=385',
+        name: 'Mark',
         post: 'CEO'
     },
     {
-        source: '/src/assets/Images/dummy-image.png',
-        name: 'Hassan',
+        source: 'https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg',
+        name: 'ELon',
         post: 'CTO'
     },
     {
-        source: '/src/assets/Images/dummy-image.png',
-        name: 'Amir',
+        source: 'https://assets.entrepreneur.com/content/3x2/2000/1680813141-GettyImages-850154658copy.jpg?format=pjeg&auto=webp&crop=16:9&width=675&height=380',
+        name: 'Bill',
         post: 'CFO'
     }
 ];
 
 const QuickTransferImage = (props) => {
     return (
-        <div className="flex flex-col justify-center items-center w-[55px]">
-            <img className="h-[50px] hover:cursor-pointer" src={props.source} alt="user image" />
+        <div className="flex flex-col justify-center items-center">
+            <img className="h-[45px] hover:cursor-pointer rounded-[50%] min-w-[45px]" src={props.source} alt="user image" />
             <h1 className="text-[#232323] font-lighter text-[15px] ">{props.name}</h1>
             <p className="text-[#718EBF] text-[12px]">{props.post}</p>
         </div>
@@ -29,7 +29,7 @@ const QuickTransferImage = (props) => {
 const QuickTransfer = () => {
     return (
         <div className="min-w-[310px] w-auto max-w-[360px] h-[230px] flex flex-col items-center bg-white py-5 rounded-[15px] gap-7" style={{ fontFamily: 'Inter' }} >
-            <div className="flex  justify-between w-[60%] gap-5 items-center">
+            <div className="flex  justify-between w-[60%] gap-3 items-center">
                 {QuickTransferData.map((data, index) => {
                     return <QuickTransferImage key={index} source={data.source} name={data.name} post={data.post} />;
                 })}

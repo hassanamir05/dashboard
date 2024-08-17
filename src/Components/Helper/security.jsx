@@ -12,11 +12,11 @@ const SecurityForm = () => {
             </div>
         </div>
 
-        <div className="flex flex-col mt-5">
+        <div className="flex flex-col mt-10">
             <Input heading="Current Password" placeholder="**********" type="password" />
             <Input heading="New Password" placeholder="**********" type="password" />
         </div>
-        <div className="w-full flex flex-row-reverse"><button className="bg-[#1814F3] w-full md:w-[150px] text-white font-semibold px-5 py-2 rounded-lg">Save</button></div>
+        <div className="w-full flex flex-row-reverse mb-10 mt-5"><button className="bg-[#1814F3] w-full md:w-[150px] text-white font-semibold px-5 py-2 rounded-lg">Save</button></div>
 
     </div>
 

@@ -37,7 +37,7 @@ const stocksList = [
 const StocksComponent = () => {
     return (
         <div
-            className="overflow-x-auto sm:rounded-lg"
+            className="overflow-x-auto sm:rounded-lg "
             style={{ fontFamily: "Inter" }}
         >
             <table className="w-full text-sm text-left rtl:text-right text-gray-500 py-2">
@@ -61,12 +61,12 @@ const StocksComponent = () => {
                     {stocksList.map((stock, index) => (
                         <tr
                             key={index}
-                            className="bg-white border-b font-[500] text-[#232323]"
+                            className="bg-white border-b font-[500] text-[#232323] "
                         >
                             <td className="px-6 py-2">{stock.slNo}</td>
                             <td className="px-6 py-2">{stock.Name}</td>
                             <td className="px-6 py-2">{stock.Price}</td>
-                            <td className="px-6 py-2 text-right">
+                            <td className="px-6 py-2 text-right ">
                                 {stock.Return < 0 ? (
                                     <span className="text-[#FE5C73]">{stock.Return}%</span>
                                 ) : (

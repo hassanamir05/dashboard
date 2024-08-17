@@ -14,7 +14,7 @@ const data = [
 
 const BarChartComponent = () => {
     const isMobile = useMediaQuery({ maxWidth: 767 });
-    const chartWidth = isMobile ? 310 : 600;
+    const chartWidth = isMobile ? 350 : 600;
 
     return (
         <div className="bg-white rounded-[15px]">

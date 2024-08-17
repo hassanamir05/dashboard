@@ -10,7 +10,7 @@ const PreferenceForm = () => {
             <Input heading="Time Zone" placeholder="(GMT - 12:00)" type="text" />
         </div>
 
-        <div className="flex flex-col ">
+        <div className="flex flex-col mt-5">
             <div>
                 <div className="flex flex-row  w-full  my-1 ">
                     <span className="mr-2  ml-[-25px] w-auto"> <Switch status="1" /> </span><p className="text-sm ">I send or recieve digital currency</p>
@@ -25,7 +25,7 @@ const PreferenceForm = () => {
             </div>
 
         </div>
-        <div className="w-full flex flex-row-reverse"><button className="bg-[#1814F3] w-full md:w-[150px] text-white font-semibold px-5 py-2 rounded-lg">Save</button></div>
+        <div className="w-full flex flex-row-reverse mb-10 mt-5"><button className="bg-[#1814F3] w-full md:w-[150px] text-white font-semibold px-5 py-2 rounded-lg">Save</button></div>
 
     </div>
 }

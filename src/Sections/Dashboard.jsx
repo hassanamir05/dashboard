@@ -16,7 +16,8 @@ const Dashboard = () => {
   const chartWidth = isMobile ? 310 : 600;
 
   return (
-    <div className="bg-[#E5E5E5] min-h-screen overflow-y-auto overflow-x-hidden py-10 min-w-screen flex flex-wrap justify-center gap-4 px-5">
+    <div className="bg-[#E5E5E5] min-h-screen overflow-y-auto overflow-x-hidden py-10 min-w-screen flex flex-wrap justify-center gap-4 px-5 ">
+
 
       {/* Credit Cards Container */}
       <div className='flex flex-col md:w-[600px] lg:w-[600px] overflow-x-auto'>
@@ -35,25 +36,24 @@ const Dashboard = () => {
 
 
       {/* Recent Transactions Container */}
-      <div>
+      <div className='w-full md:max-w-[310px]'>
         <ComponentHeading name=" Recent Transactions" />
         <RecentTransaction />
       </div>
 
 
+
       {/* Bar Chart Container */}
-      <div>
+      <div className='w-full md:max-w-[600px] '>
         <ComponentHeading name=" Weekly Activity" />
         <BarChartComponent />
       </div>
 
 
-      {/* Pi Chart Container */}
-      <div>
+
+      <div className="flex flex-col">
         <ComponentHeading name="Expense Statics" />
-        <div className="bg-white p-4 flex justify-center items-center rounded-[15px]" style={{ width: '300px', height: '270px' }}>
-          <PiChartComponent />
-        </div>
+        <PiChartComponent />
       </div>
 
 
@@ -65,7 +65,7 @@ const Dashboard = () => {
 
 
       {/* Line Chart Container */}
-      <div className='h-auto' style={{ width: chartWidth }}>
+      <div className='h-auto w-full md:max-w-[600px]'>
         <ComponentHeading name="Balance History" />
         <LineChartComponent />
       </div>

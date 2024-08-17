@@ -5,7 +5,7 @@ const Transaction = (props) => {
 
     return (
         <div className="flex items-center justify-between mb-4">
-            <div style={{ backgroundColor: bgColor }} className="w-10 h-10 flex items-center justify-center rounded-full mr-4 flex-grow">
+            <div style={{ backgroundColor: bgColor }} className="max-w-[45px] max-h-[45px] p-3 flex items-center justify-center rounded-full mr-4 flex-grow">
                 <img src={props.icon} alt="icon" className="w-5 h-5" />
             </div>
             <div className="flex-grow">

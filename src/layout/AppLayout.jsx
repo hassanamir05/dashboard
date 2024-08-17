@@ -7,7 +7,7 @@ const AppLayout = () => {
     <div className="flex flex-row">
       <Sidebar />
 
-      <div className="flex flex-col w-screen">
+      <div className="flex flex-col w-screen md:ml-[230px]">
         <Appbar />
 
         <Outlet />

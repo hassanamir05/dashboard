@@ -41,7 +41,7 @@ const Investment = () => {
       </div>
 
 
-      <div className="flex flex-row w-full gap-x-7 flex-wrap overflow-x-auto">
+      <div className="flex flex-row w-full gap-x-7 flex-wrap overflow-x-auto justify-center">
 
 
         <div className="flex flex-col max-w-[540px] min-w-[300px] w-[450px] ">
@@ -53,10 +53,11 @@ const Investment = () => {
           <ComponentHeading name="Monthly Revenue" />
           <MonthlyRevenueChartComponent />
         </div>
+
       </div>
 
 
-      <div className="flex flex-row w-full gap-x-7 flex-wrap ">
+      <div className="flex flex-row w-full gap-x-[45px] flex-wrap md:px-7">
 
 
         <div className="flex flex-col">

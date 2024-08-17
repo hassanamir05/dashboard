@@ -37,7 +37,7 @@ const Account = () => {
     <div className="bg-[#E5E5E5] min-h-screen overflow-y-auto overflow-x-hidden py-10 min-w-screen justify-center flex flex-wrap gap-4 px-5">
 
 
-      <div className="flex gap-0 flex-row justify-evenly w-full flex-wrap">
+      <div className="flex gap-0 flex-row justify-evenly w-full flex-wrap ">
         {
           smallCardsData.map((cardData, index) => {
             return <SmallCard title={cardData.title} iconSrc={cardData.iconSrc} value={cardData.amount} bgColor={cardData.bgColor} />
@@ -64,7 +64,7 @@ const Account = () => {
         <DebitAndCreditOverviewChart />
       </div>
 
-      <div className="flex flex-col min-w-[310px] w-auto">
+      <div className="flex flex-col  w-auto">
         <ComponentHeading name="Invoices Sent" />
         <InvoiceCollection />
       </div>
