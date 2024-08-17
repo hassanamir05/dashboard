@@ -88,8 +88,8 @@ const Appbar = () => {
       </div>
 
       {/* Mobile Search Box */}
-      <div customeClass="flex md:hidden lg:hidden">
-        <SearchBox />
+      <div>
+        <SearchBox customClass="flex md:hidden lg:hidden" />
       </div>
     </div>
   );
