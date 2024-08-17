@@ -19,7 +19,7 @@ const Sidebar = () => {
 
 
       {/* Mobile Sidebar */}
-      <div className={`fixed inset-0 bg-white w-[230px] h-screen flex-col border md:hidden transition-transform duration-500 ${mobileSidebarVisible ? 'translate-x-0' : '-translate-x-full'}`}>
+      <div className={`z-index-100 fixed inset-0 bg-white w-[230px] h-screen flex-col border md:hidden transition-transform duration-500 ${mobileSidebarVisible ? 'translate-x-0' : '-translate-x-full'}`}>
         <button
           className="absolute top-4 right-4 text-xl font-bold"
           onClick={() => setMobileSidebarVisible(false)}>
@@ -57,9 +57,6 @@ const SidebarLinks = () => (
     </NavLink>
     <NavLink to="/services" style={{ fontFamily: 'Inter' }} className={({ isActive }) => (isActive ? "w-[210px] px-[35px] text-md h-[30px] pt-2 active my-3" : "w-[210px] px-[35px] text-md h-[30px] pt-2 non-active my-3 ")}>
       <span className="text-left w-[200px]"><i className="fa-solid fa-screwdriver-wrench text-md mr-2"></i>Services</span>
-    </NavLink>
-    <NavLink to="/my-priviliges" style={{ fontFamily: 'Inter' }} className={({ isActive }) => (isActive ? "w-[210px] px-[35px] text-md h-[30px] pt-2 active my-3" : "w-[210px] px-[35px] text-md h-[30px] pt-2 non-active my-3 ")}>
-      <span className="text-left w-[200px]"><i className="fa-solid fa-lightbulb-dollar text-md mr-2"></i>My Priviliges</span>
     </NavLink>
     <NavLink to="/setting" style={{ fontFamily: 'Inter' }} className={({ isActive }) => (isActive ? "w-[210px] px-[35px] text-md h-[30px] pt-2 active my-3" : "w-[210px] px-[35px] text-md h-[30px] pt-2 non-active my-3 ")}>
       <span className="text-left w-[200px]"><i className="fa-solid fa-gear text-md mr-2"></i>Settings</span>

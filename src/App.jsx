@@ -7,7 +7,7 @@ import Loan from "./Sections/Loan";
 import MyPrivilige from "./Sections/MyPriviliges";
 import Service from "./Sections/Service";
 import Setting from "./Sections/Setting";
-import CreditCard from "./Sections/CreditCard";
+import CreditCardSection from "./Sections/CreditCard";
 import Account from "./Sections/account";
 import Investment from "./Sections/investment";
 import AppLayout from "./layout/AppLayout";
@@ -38,7 +38,7 @@ const App = () => {
         },
         {
           path: "credit-cards",
-          element: <CreditCard />,
+          element: <CreditCardSection />,
         },
         {
           path: "loans",
@@ -47,10 +47,6 @@ const App = () => {
         {
           path: "services",
           element: <Service />,
-        },
-        {
-          path: "my-priviliges",
-          element: <MyPrivilige />,
         },
         {
           path: "setting",

@@ -32,7 +32,7 @@ const Investment = () => {
 
     <div className="bg-[#E5E5E5] min-h-screen overflow-y-auto overflow-x-hidden py-10 min-w-screen flex flex-wrap px-5">
 
-      <div className="flex gap-2 flex-row justify-evenly w-full h-[140px] overflow-x-scroll hide-scrollbar">
+      <div className="flex gap-2 flex-row  w-full h-auto flex-wrap">
         {
           investmentData.map((serviceData) => {
             return <InvestmentSmallCards title={serviceData.title} iconSrc={serviceData.iconSrc} description={serviceData.description} bgColor={serviceData.bgColor} />

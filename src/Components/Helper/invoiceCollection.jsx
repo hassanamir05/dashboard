@@ -32,7 +32,7 @@ const data = [
 ]
 
 const InvoiceCollection = () => {
-    return <div className="flex flex-col py-3 px-4 h-[270px] w-[270px] bg-white rounded-[15px] justify-evenly">
+    return <div className="flex flex-col py-3 md:px-4 h-[270px] md:mx-4 w-[310px] px-10 md:w-[270px] bg-white rounded-[15px] justify-evenly ">
         {
             data.map((inv, index) => {
                 return <InvoiceItem

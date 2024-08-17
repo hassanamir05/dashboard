@@ -66,23 +66,29 @@ const Appbar = () => {
   }, [location]);
 
   return (
-    <div className="h-[75px] w-full px-10 pt-3 flex justify-between items-center sticky top-0 bg-white z-10 shadow-md">
+    <div className="md:h-[75px] h-[110px] w-full px-10 pt-5 flex flex-col sticky top-0 bg-white z-10 shadow-md">
 
-      <button className="ml-4 md:hidden mr-2" onClick={() => setMobileSidebarVisible(!mobileSidebarVisible)}>
-        <i className="fa-solid fa-bars"> </i>
-      </button>
+      <div className="w-full px-0 pt-0 flex justify-between items-center">
+        <button className="ml-4 md:hidden mr-2" onClick={() => setMobileSidebarVisible(!mobileSidebarVisible)}>
+          <i className="fa-solid fa-bars"> </i>
+        </button>
 
-      <h1 style={{ fontFamily: 'Inter' }} className="text-2xl font-[500] text-headingColor">
-        {title}
-      </h1>
+        <h1 style={{ fontFamily: 'Inter' }} className="text-2xl font-[500] text-headingColor">
+          {title}
+        </h1>
 
-      <div className="flex items-center gap-3">
-        <SearchBox />
         <div className="flex items-center gap-3">
-          <IconButton src="/src/assets/Icons/settingIcon.png" />
-          <IconButton src="/src/assets/Icons/notification.png" />
+          <SearchBox />
+          <div className="flex items-center gap-3">
+            <IconButton src="/src/assets/Icons/settingIcon.png" />
+            <IconButton src="/src/assets/Icons/notification.png" />
+          </div>
+          <ProfilePic src="https://www.shareicon.net/data/128x128/2016/09/15/829443_man_512x512.png" />
         </div>
-        <ProfilePic src="https://www.shareicon.net/data/128x128/2016/09/15/829443_man_512x512.png" />
+      </div>
+
+      <div className="flex md:hidden lg:hidden mt-3 z-50">
+        <SearchBox />
       </div>
     </div>
   );
