@@ -25,14 +25,15 @@ const BarChartComponent = () => {
                 margin={{
                     top: 30, right: 20, left: -10, bottom: 10,
                 }}
+                barSize={15}
             >
-                <CartesianGrid strokeDasharray="3 3" />
+                <CartesianGrid strokeDasharray="1 1 " />
                 <XAxis dataKey="name" />
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Bar dataKey="Deposit" fill="#00c6cf" />
-                <Bar dataKey="Withdraw" fill="#7b61ff" />
+                <Bar dataKey="Deposit" fill="#1814F3" radius={[10, 10, 0, 0]} />
+                <Bar dataKey="Withdraw" fill="#16DBCC" radius={[10, 10, 0, 0]} />
             </BarChart>
         </div>
     );
