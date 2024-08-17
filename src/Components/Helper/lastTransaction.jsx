@@ -1,7 +1,7 @@
 const LastTransaction = (props) => {
     return (
         <div
-            className="flex flex-row w-auto text-md justify-start items-center my-2 text-[#718EBF]"
+            className="flex flex-row w-auto text-md justify-start items-center my-1 text-[#718EBF]"
             style={{
                 fontFamily: "Inter",
             }}

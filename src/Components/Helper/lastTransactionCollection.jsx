@@ -36,8 +36,7 @@ const data = [
 
 
 const LastTransactionCollection = () => {
-    console.log('inside last transaction collection function');
-    return <div className="flex flex-col bg-white rounded-[15px] py-1 px-9 w-full ">
+    return <div className="flex flex-col bg-white rounded-[15px] py-4 px-9 w-full ">
         {
             data.map((dataObj, index) => {
                 return <LastTransaction

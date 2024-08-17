@@ -89,7 +89,7 @@ const Service = () => {
       }
     </div>
 
-    <div className="flex flex-col">
+    <div className="flex flex-col w-full p-0">
       <ComponentHeading name="Bank Service List" />
       <div>
         {
