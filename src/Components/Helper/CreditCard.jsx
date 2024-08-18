@@ -4,10 +4,10 @@ import CardHeading from "./cardHeading";
 
 const CreditCard = (props) => {
     const backgroundImageUrl = props.type === 'primary'
-        ? 'src/assets/Images/credit-card-primary.png'
+        ? 'assets/Images/credit-card-primary.png'
         : props.type === 'secondary'
-            ? 'src/assets/Images/credit-card-secondary.png'
-            : 'src/assets/Images/credit-card-white.png';
+            ? 'assets/Images/credit-card-secondary.png'
+            : 'assets/Images/credit-card-white.png';
 
     const CircleColor = props.type === 'primary'
         ? 'src/assets/Images/circle-color-card.png'
