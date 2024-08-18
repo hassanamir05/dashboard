@@ -4,22 +4,22 @@ import CardHeading from "./cardHeading";
 
 const CreditCard = (props) => {
     const backgroundImageUrl = props.type === 'primary'
-        ? '/src/assets/Images/credit-card-primary.png'
+        ? 'src/assets/Images/credit-card-primary.png'
         : props.type === 'secondary'
-            ? '/src/assets/Images/credit-card-secondary.png'
-            : '/src/assets/Images/credit-card-white.png';
+            ? 'src/assets/Images/credit-card-secondary.png'
+            : 'src/assets/Images/credit-card-white.png';
 
     const CircleColor = props.type === 'primary'
-        ? '/src/assets/Images/circle-color-card.png'
+        ? 'src/assets/Images/circle-color-card.png'
         : props.type === 'secondary'
-            ? '/src/assets/Images/circle-color-card.png'
-            : '/src/assets/Images/circle-white-card.png'
+            ? 'src/assets/Images/circle-color-card.png'
+            : 'src/assets/Images/circle-white-card.png'
 
     const ChipColor = props.type === 'primary'
         ? '/src/assets/Icons/chip-colored.png'
         : props.type === 'secondary'
-            ? '/src/assets/Icons/chip-colored.png'
-            : '/src/assets/Icons/chip.png'
+            ? 'src/assets/Icons/chip-colored.png'
+            : 'src/assets/Icons/chip.png'
 
     const textColor = (props.type === 'primary' || props.type === 'secondary')
         ? '#fff'
