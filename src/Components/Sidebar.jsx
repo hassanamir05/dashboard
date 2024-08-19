@@ -3,6 +3,12 @@ import { NavLink } from "react-router-dom";
 import { SidebarContext } from '../Context/sidebarContext';
 import "./Sidebar.css";
 
+
+
+import Logo from '/src/assets/Icons/logo.png';
+
+
+
 const Sidebar = () => {
   const { mobileSidebarVisible, setMobileSidebarVisible } = useContext(SidebarContext);
 
@@ -11,7 +17,7 @@ const Sidebar = () => {
       {/* Desktop Sidebar */}
       <div className="fixed sidebar w-[230px] h-screen flex-col border hidden md:flex " style={{ zIndex: 9999 }}>
         <div className="flex flex-row items-center w-[230px] justify-center my-7 mb-7">
-          <img src="/src/assets/Icons/logo.png" alt="logo" className="h-6" />
+          <img src={Logo} alt="logo" className="h-6" />
           <span style={{ fontFamily: 'Inter' }} className="text-[20px] ml-3 font-[500] text-headingColor">Dashboard.</span>
         </div>
         <SidebarLinks />
@@ -26,7 +32,7 @@ const Sidebar = () => {
           &times;
         </button>
         <div className="flex flex-row items-center w-[230px] justify-center my-7 mb-7">
-          <img src="/src/assets/Icons/logo.png" alt="logo" className="h-6" />
+          <img src={Logo} alt="logo" className="h-6" />
           <span style={{ fontFamily: 'Inter' }} className="text-[20px] ml-3 font-[500] text-headingColor">Dashboard.</span>
         </div>
         <SidebarLinks />
