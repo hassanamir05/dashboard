@@ -5,7 +5,7 @@ import ProfilePic from './Helper/UserProfilePic';
 import { SidebarContext } from "../Context/sidebarContext";
 import IconButton from '../Components/Helper/IconButton';
 import SettingIcon from '/src/assets/Icons/settingIcon.png'
-import NotificationIcon from '/src/assets/Icons/notification.png'
+// import NotificationIcon from '/src/assets/Icons/notification.png'
 
 
 const Appbar = () => {
@@ -84,7 +84,7 @@ const Appbar = () => {
           <SearchBox customClass="hidden md:flex" />
           <div className="flex items-center gap-3">
             <IconButton src={SettingIcon} />
-            <IconButton src={NotificationIcon} />
+            <IconButton src={SettingIcon} />
           </div>
           <ProfilePic src="https://www.shareicon.net/data/128x128/2016/09/15/829443_man_512x512.png" />
         </div>
