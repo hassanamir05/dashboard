@@ -5,29 +5,34 @@ import LastTransactionCollection from "../Components/Helper/lastTransactionColle
 import InvoiceCollection from "../Components/Helper/invoiceCollection";
 import DebitAndCreditOverviewChart from "../Components/Charts/overViewChart";
 
+import Balance from '/src/assets/accountsSectionIcons/balance.png'
+import Income from '/src/assets/accountsSectionIcons/income.png'
+import Expense from '/src/assets/accountsSectionIcons/expense.png'
+import Saving from '/src/assets/accountsSectionIcons/saving.png'
+
 const smallCardsData = [
   {
     title: 'My Balance',
     amount: '$12,750',
-    iconSrc: '/src/assets/accountsSectionIcons/balance.png',
+    iconSrc: Balance,
     bgColor: '#FFF5D9',
   },
   {
     title: 'Income',
     amount: '$5,600',
-    iconSrc: '/src/assets/accountsSectionIcons/income.png',
+    iconSrc: Income,
     bgColor: '#E7EDFF',
   },
   {
     title: 'Expense',
     amount: '$3,460',
-    iconSrc: '/src/assets/accountsSectionIcons/expense.png',
+    iconSrc: Expense,
     bgColor: '#FFE0EB',
   },
   {
     title: 'Total Saving',
     amount: '$7,920',
-    iconSrc: '/src/assets/accountsSectionIcons/saving.png',
+    iconSrc: Saving,
     bgColor: '#DCFAF8',
   },
 ]

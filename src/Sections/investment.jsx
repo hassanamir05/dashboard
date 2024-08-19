@@ -6,23 +6,27 @@ import InvestmentCollection from "../Components/Helper/investmentCollection";
 import StocksComponent from "../Components/Helper/stocks";
 import InvestmentSmallCards from "../Components/Helper/investmentSmallCards";
 
+import MoneyBag from '/src/assets/InvestmentSectionIncons/money-bag.png'
+import InvestmentChart from '/src/assets/InvestmentSectionIncons/investment-chart.png'
+import ReturnRate from '/src/assets/InvestmentSectionIncons/return-rate.png'
+
 const investmentData = [
   {
     title: 'Invested Amount',
     description: '$15,000',
-    iconSrc: '/src/assets/InvestmentSectionIncons/money-bag.png',
+    iconSrc: MoneyBag,
     bgColor: '#DCFAF8',
   },
   {
     title: 'No. of Investments',
     description: '1,520',
-    iconSrc: '/src/assets/InvestmentSectionIncons/investment-chart.png',
+    iconSrc: InvestmentChart,
     bgColor: '#FFE0EB',
   },
   {
     title: 'Return Rate',
     description: '+5.80%',
-    iconSrc: '/src/assets/InvestmentSectionIncons/return-rate.png',
+    iconSrc: ReturnRate,
     bgColor: '#E7EDFF',
   },
 ]

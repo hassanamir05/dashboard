@@ -1,9 +1,12 @@
 import LastTransaction from "./lastTransaction"
 
+import Subscripton from "/src/assets/accountsSectionIcons/subscription.png"
+import Service from "/src/assets/accountsSectionIcons/service.png"
+import UserPink from "/src/assets/accountsSectionIcons/user-pink.png"
 
 const data = [
     {
-        iconSrc: '/src/assets/accountsSectionIcons/subscription.png',
+        iconSrc: Subscripton,
         bgColor: '#DCFAF8',
         title: 'Spotify Subscription',
         date: '5 May 2024',
@@ -13,7 +16,7 @@ const data = [
         amount: -150
     },
     {
-        iconSrc: '/src/assets/accountsSectionIcons/service.png',
+        iconSrc: Service,
         bgColor: '#E7EDFF',
         title: 'Mobile Service',
         date: '5 May 2024',
@@ -23,7 +26,7 @@ const data = [
         amount: -340
     },
     {
-        iconSrc: '/src/assets/accountsSectionIcons/user-pink.png',
+        iconSrc: UserPink,
         bgColor: '#FFE0EB',
         title: 'Emily Wilson',
         date: '5 May 2024',

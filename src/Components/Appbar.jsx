@@ -4,6 +4,9 @@ import SearchBox from "./Helper/SearchBox";
 import ProfilePic from './Helper/UserProfilePic';
 import { SidebarContext } from "../Context/sidebarContext";
 import IconButton from '../Components/Helper/IconButton';
+import SettingIcon from '/src/assets/Icons/settingIcon.png'
+import NotificationIcon from '/src/assets/Icons/settingIcon.png'
+
 
 const Appbar = () => {
   const { mobileSidebarVisible, setMobileSidebarVisible } = useContext(SidebarContext);
@@ -80,8 +83,8 @@ const Appbar = () => {
         <div className="flex items-center gap-3">
           <SearchBox customClass="hidden md:flex" />
           <div className="flex items-center gap-3">
-            <IconButton src="src/assets/Icons/settingIcon.png" />
-            <IconButton src="src/assets/Icons/notification.png" />
+            <IconButton src={SettingIcon} />
+            <IconButton src={NotificationIcon} />
           </div>
           <ProfilePic src="https://www.shareicon.net/data/128x128/2016/09/15/829443_man_512x512.png" />
         </div>

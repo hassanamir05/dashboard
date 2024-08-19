@@ -1,5 +1,9 @@
 import React from "react";
 
+import UpIcon from '/src/assets/TransactionSectionIcons/up.png'
+import DownIcon from '/src/assets/TransactionSectionIcons/down.png'
+
+
 const transactionList = [
   {
     description: "Spotify Subscription",
@@ -88,8 +92,8 @@ const TableComponent = () => {
                   className="mr-2"
                   src={
                     transaction.amount >= 0
-                      ? "/src/assets/TransactionSectionIcons/up.png"
-                      : "/src/assets/TransactionSectionIcons/down.png"
+                      ? UpIcon
+                      : DownIcon
                   }
                 />{" "}
                 {transaction.description}

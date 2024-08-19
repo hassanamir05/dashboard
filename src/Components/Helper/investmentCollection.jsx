@@ -1,19 +1,21 @@
 import InvestmentCard from './investmentComponent';
-import ComponentHeading from './ComponentHeading';
+
+import Apple from '/src/assets/InvestmentSectionIncons/apple.png';
+import Google from '/src/assets/InvestmentSectionIncons/google.png';
+import Tesla from '/src/assets/InvestmentSectionIncons/tesla.png';
 
 const investmentData = [
     {
-        iconSrc: '/src/assets/InvestmentSectionIncons/apple.png',
+        iconSrc: Apple,
         bgColor: '#FFE0EB',
         company: 'Apple',
         description: 'E-commerce, Marketplace',
         amount: '$54,000',
         amountDescription: 'Envestment Value',
         returnValue: 16,
-
     },
     {
-        iconSrc: '/src/assets/InvestmentSectionIncons/google.png',
+        iconSrc: Google,
         bgColor: '#E7EDFF',
         company: 'Samsung Mobile',
         description: 'E-commerce, Marketplace',
@@ -23,7 +25,7 @@ const investmentData = [
 
     },
     {
-        iconSrc: '/src/assets/InvestmentSectionIncons/tesla.png',
+        iconSrc: Tesla,
         bgColor: '#FFF5D9',
         company: 'Tesla Motor',
         description: 'Electric Vehicle',

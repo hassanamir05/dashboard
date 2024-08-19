@@ -2,29 +2,34 @@ import SmallCard from "../Components/Helper/smallCard";
 import LoanTableComponent from "../Components/Helper/LoanTable";
 import ComponentHeading from '../Components/Helper/ComponentHeading'
 
+import PersonalLoan from '/src/assets/loanSectionIcons/personal-loan.png'
+import CooperateLoan from '/src/assets/loanSectionIcons/cooperate-loan.png'
+import BusinessLoan from '/src/assets/loanSectionIcons/business-loan.png'
+import CustomLoan from '/src/assets/loanSectionIcons/custom-loan.png'
+
 const smallCardsData = [
   {
     title: 'Personal Loan',
     amount: '$50,000',
-    iconSrc: '/src/assets/loanSectionIcons/personal-loan.png',
+    iconSrc: PersonalLoan,
     bgColor: '#E7EDFF',
   },
   {
     title: 'Cooperate Loan',
     amount: '$100,000',
-    iconSrc: '/src/assets/loanSectionIcons/cooperate-loan.png',
+    iconSrc: CooperateLoan,
     bgColor: '#FFF5D9',
   },
   {
     title: 'Business Loan',
     amount: '$500,000',
-    iconSrc: '/src/assets/loanSectionIcons/business-loan.png',
+    iconSrc: BusinessLoan,
     bgColor: '#FFE0EB',
   },
   {
     title: 'Custom Loan',
     amount: '$7,920',
-    iconSrc: '/src/assets/loanSectionIcons/custom-loan.png',
+    iconSrc: CustomLoan,
     bgColor: '#DCFAF8',
   },
 ]

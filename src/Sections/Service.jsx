@@ -3,23 +3,32 @@ import ComponentHeading from "../Components/Helper/ComponentHeading";
 import ServiceListCard from "../Components/Helper/serviceListCard";
 import '../App.css'
 
+import LifeInsurance from '/src/assets/serviceSectionIcons/life-insurance.png'
+import Shopping from '/src/assets/serviceSectionIcons/shopping.png'
+import Safety from '/src/assets/serviceSectionIcons/safety.png'
+import Loan from '/src/assets/serviceSectionIcons/loan.png'
+import Bag from '/src/assets/serviceSectionIcons/bag.png'
+import User from '/src/assets/serviceSectionIcons/user.png'
+import SafetyIcon from '/src/assets/serviceSectionIcons/safety.png'
+import Growth from '/src/assets/serviceSectionIcons/growth.png'
+
 const servicesData = [
   {
     title: 'Life Insurance',
     description: 'Unlimited Protection',
-    iconSrc: '/src/assets/serviceSectionIcons/life-insurance.png',
+    iconSrc: LifeInsurance,
     bgColor: '#E7EDFF',
   },
   {
     title: 'Shopping',
     description: 'Buy. Think. Grow',
-    iconSrc: '/src/assets/serviceSectionIcons/shopping.png',
+    iconSrc: Shopping,
     bgColor: '#FFF5D9',
   },
   {
     title: 'Safety',
     description: 'We are your allies',
-    iconSrc: '/src/assets/serviceSectionIcons/safety.png',
+    iconSrc: Safety,
     bgColor: '#DCFAF8',
   },
 ]
@@ -31,7 +40,7 @@ const backServiceListData = [
     description: "It is a long established",
     detail1: "Lorem Ipsum",
     detail2: "Many publishing",
-    icon: "/src/assets/serviceSectionIcons/loan.png",
+    icon: Loan,
     bgColor: "#FFE0EB"
   },
   {
@@ -39,7 +48,7 @@ const backServiceListData = [
     description: "It is a long established",
     detail1: "Lorem Ipsum",
     detail2: "Many publishing",
-    icon: "/src/assets/serviceSectionIcons/bag.png",
+    icon: Bag,
     bgColor: "#FFF5D9"
   },
   {
@@ -47,7 +56,7 @@ const backServiceListData = [
     description: "It is a long established",
     detail1: "Lorem Ipsum",
     detail2: "Many publishing",
-    icon: "/src/assets/serviceSectionIcons/growth.png",
+    icon: Growth,
     bgColor: "#FFE0EB"
   },
   {
@@ -55,7 +64,7 @@ const backServiceListData = [
     description: "It is a long established",
     detail1: "Lorem Ipsum",
     detail2: "Many publishing",
-    icon: "/src/assets/serviceSectionIcons/user.png",
+    icon: User,
     bgColor: "#E7EDFF"
   },
   {
@@ -63,7 +72,7 @@ const backServiceListData = [
     description: "It is a long established",
     detail1: "Lorem Ipsum",
     detail2: "Many publishing",
-    icon: "/src/assets/serviceSectionIcons/safety.png",
+    icon: SafetyIcon,
     bgColor: "#DCFAF8"
   },
   {
@@ -71,7 +80,7 @@ const backServiceListData = [
     description: "It is a long established",
     detail1: "Lorem Ipsum",
     detail2: "Many publishing",
-    icon: "/src/assets/serviceSectionIcons/loan.png",
+    icon: Loan,
     bgColor: "#FFE0EB"
   }
 ];

@@ -1,29 +1,34 @@
 import InvoiceItem from "./invoice";
 
+import Apple from '/src/assets/accountsSectionIcons/apple.png'
+import UserYellow from '/src/assets/accountsSectionIcons/user-yellow.png'
+import UserPink from '/src/assets/accountsSectionIcons/user-pink.png'
+import PlayStation from '/src/assets/accountsSectionIcons/playstation.png'
+
 const data = [
     {
-        iconSrc: '/src/assets/accountsSectionIcons/apple.png',
+        iconSrc: Apple,
         title: 'Apple Store',
         time: '5h ago',
         bgColor: '#DCFAF8',
         price: '450'
     },
     {
-        iconSrc: '/src/assets/accountsSectionIcons/user-yellow.png',
+        iconSrc: UserYellow,
         title: 'Michael',
         time: '2 days ago',
         bgColor: '#FFF5D9',
         price: '160'
     },
     {
-        iconSrc: '/src/assets/accountsSectionIcons/playstation.png',
+        iconSrc: PlayStation,
         title: 'Play Station',
         time: '5 days ago',
         bgColor: '#E7EDFF',
         price: '1450'
     },
     {
-        iconSrc: '/src/assets/accountsSectionIcons/user-pink.png',
+        iconSrc: UserPink,
         title: 'William',
         time: '10 days ago',
         bgColor: '#FFE0EB',

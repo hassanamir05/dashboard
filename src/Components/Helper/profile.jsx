@@ -1,9 +1,12 @@
 import Input from './input';
 
+import ProfilePic from '/src/assets/Images/dummy-image.png'
+
+
 const ProfileForm = () => {
     return <div className="flex md:flex-row flex-col bg-white rounded-[15px] gap-x-10 px-10 py-5 items-center md:items-start">
         <div className="">
-            <img src="/src/assets/Images/dummy-image.png" alt="" />
+            <img src={ProfilePic} alt="" />
             <button className="relative bottom-[45px] left-[105px] bg-[#1814F3] h-[30px] w-[30px] rounded-[50%]"><img src="/src/assets/Icons/pencil.png" alt="edit icon" height="10px" width="15px" className="absolute bottom-2 left-2" /></button>
         </div>
         <div className="flex flex-col gap-y-1">

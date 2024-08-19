@@ -1,5 +1,4 @@
 const ServiceCard = (props) => {
-    console.log('inside small cards component');
 
     return (
         <div className="card bg-white h-auto py-5 px-3 flex flex-row rounded-[15px] m-3 flex-grow justify-center max-h-[90px] min-w-[220px]">

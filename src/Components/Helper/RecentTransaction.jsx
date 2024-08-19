@@ -1,22 +1,26 @@
 import Transaction from "./Transaction";
 
+import MyIcon from '/src/assets/Icons/my.png'
+import Paypal from '/src/assets/Icons/paypal.png'
+import DollarCoin from '/src/assets/Icons/dollar-coin.png'
+
 const TransactionsData = [
     {
-        icon: '/src/assets/Icons/my.png',
+        icon: MyIcon,
         iconName: 'my',
         title: 'Deposit from my Card',
         date: '28 January 2021',
         amount: -850
     },
     {
-        icon: '/src/assets/Icons/paypal.png',
+        icon: Paypal,
         iconName: 'paypal',
         title: 'Deposit Paypal',
         date: '25 January 2021',
         amount: 2500
     },
     {
-        icon: '/src/assets/Icons/dollarCoin.png',
+        icon: DollarCoin,
         iconName: 'dollarCoin',
         title: 'Jemi Wilson',
         date: '21 January 2021',
