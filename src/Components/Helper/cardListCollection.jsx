@@ -1,8 +1,11 @@
 import CardListComponent from "./cardListComponent";
+import CreditCardBlue from "/src/assets/creditCardSectionIcons/credit-card-blue.png";
+import CreditCardPink from "/src/assets/creditCardSectionIcons/credit-card-pink.png";
+import CreditCardYellow from "/src/assets/creditCardSectionIcons/credit-card-yellow.png";
 
 const cardData = [
     {
-        iconSrc: '/src/assets/creditCardSectionIcons/credit-card-blue.png',
+        iconSrc: CreditCardBlue,
         bgColor: '#E7EDFF',
         cardType: 'Secondary',
         bank: 'DSL Bank',
@@ -10,7 +13,7 @@ const cardData = [
         nameCard: 'William'
     },
     {
-        iconSrc: '/src/assets/creditCardSectionIcons/credit-card-pink.png',
+        iconSrc: CreditCardPink,
         bgColor: '#FFE0EB',
         cardType: 'Primary',
         bank: 'BRC Bank',
@@ -18,7 +21,7 @@ const cardData = [
         nameCard: 'Michel'
     },
     {
-        iconSrc: '/src/assets/creditCardSectionIcons/credit-card-yellow.png',
+        iconSrc: CreditCardYellow,
         bgColor: '#FFF5D9',
         cardType: 'Secondary',
         bank: 'ABM Bank',
@@ -26,7 +29,7 @@ const cardData = [
         nameCard: 'Edward'
     },
     {
-        iconSrc: '/src/assets/creditCardSectionIcons/credit-card-pink.png',
+        iconSrc: CreditCardPink,
         bgColor: '#FFE0EB',
         cardType: 'Primary',
         bank: 'BRC Bank',

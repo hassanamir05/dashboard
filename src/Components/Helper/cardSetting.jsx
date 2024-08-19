@@ -1,27 +1,32 @@
 import CardSettingComponent from "./cardSettingComponent";
 
+import CreditCardYellow from "/src/assets/creditCardSectionIcons/credit-card-yellow.png";
+import Lock from '/src/assets/creditCardSectionIcons/lock.png';
+import Google from '/src/assets/creditCardSectionIcons/google.png';
+import Apple from '/src/assets/creditCardSectionIcons/apple.png';
+
 
 const settingsData = [
     {
-        iconSrc: '/src/assets/creditCardSectionIcons/credit-card-yellow.png',
+        iconSrc: CreditCardYellow,
         bgColor: '#FFF5D9',
         title: 'Block Card',
         description: 'Instantly block your card'
     },
     {
-        iconSrc: '/src/assets/creditCardSectionIcons/lock.png',
+        iconSrc: Lock,
         bgColor: '#E7EDFF',
         title: 'Change Pin Code',
         description: 'Withdraw without any card'
     },
     {
-        iconSrc: '/src/assets/creditCardSectionIcons/google.png',
+        iconSrc: Google,
         bgColor: '#FFE0EB',
         title: 'Add to Google Pay',
         description: 'Withdraw without any card'
     },
     {
-        iconSrc: '/src/assets/creditCardSectionIcons/apple.png',
+        iconSrc: Apple,
         bgColor: '#DCFAF8',
         title: 'Add to Apple Pay',
         description: 'Instantly block your card'

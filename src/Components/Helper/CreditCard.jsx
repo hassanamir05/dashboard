@@ -1,25 +1,34 @@
 import CardContent from "./cardContent";
 import CardHeading from "./cardHeading";
 
+import PrimaryBackground from '/src/assets/Images/credit-card-primary.png'
+import SecondaryBackground from '/src/assets/Images/credit-card-secondary.png'
+import WhiteBackground from '/src/assets/Images/credit-card-white.png'
+
+import CircleColorCard from '/src/assets/Images/circle-color-card.png'
+import CircleWhiteCard from '/src/assets/Images/circle-white-card.png'
+
+import ColoredChip from '/src/assets/Icons/chip-colored.png'
+import Chip from '/src/assets/Icons/chip.png'
 
 const CreditCard = (props) => {
     const backgroundImageUrl = props.type === 'primary'
-        ? 'src/assets/Images/credit-card-primary.png'
+        ? PrimaryBackground
         : props.type === 'secondary'
-            ? 'src/assets/Images/credit-card-secondary.png'
-            : 'src/assets/Images/credit-card-white.png';
+            ? SecondaryBackground
+            : WhiteBackground;
 
     const CircleColor = props.type === 'primary'
-        ? 'src/assets/Images/circle-color-card.png'
+        ? CircleColorCard
         : props.type === 'secondary'
-            ? 'src/assets/Images/circle-color-card.png'
-            : 'src/assets/Images/circle-white-card.png'
+            ? CircleColorCard
+            : CircleWhiteCard
 
     const ChipColor = props.type === 'primary'
-        ? 'src/assets/Icons/chip-colored.png'
+        ? ColoredChip
         : props.type === 'secondary'
-            ? 'src/assets/Icons/chip-colored.png'
-            : 'src/assets/Icons/chip.png'
+            ? ColoredChip
+            : Chip
 
     const textColor = (props.type === 'primary' || props.type === 'secondary')
         ? '#fff'

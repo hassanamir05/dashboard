@@ -81,7 +81,7 @@ const TableComponent = () => {
               key={index}
               className="bg-white border-b font-[500] text-[#232323]"
             >
-              <td className="px-6 py-4 flex">
+              <td className="px-6 py-4 flex items-center h-[90px]">
                 <img
                   height={20}
                   width={20}
