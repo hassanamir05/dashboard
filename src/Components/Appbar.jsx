@@ -5,7 +5,7 @@ import ProfilePic from './Helper/UserProfilePic';
 import { SidebarContext } from "../Context/sidebarContext";
 import IconButton from '../Components/Helper/IconButton';
 import SettingIcon from '/src/assets/Icons/settingIcon.png'
-import NotificationIcon from '/src/assets/Icons/settingIcon.png'
+import NotificationIcon from '/src/assets/Icons/notification.png'
 
 
 const Appbar = () => {
