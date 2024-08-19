@@ -2,7 +2,7 @@ import Transaction from "./Transaction";
 
 import MyIcon from '/src/assets/Icons/my.png'
 import Paypal from '/src/assets/Icons/paypal.png'
-import DollarCoin from '/src/assets/Icons/dollar-coin.png'
+import DollarCoin from '/src/assets/Icons/dollarCoin.png'
 
 const TransactionsData = [
     {
